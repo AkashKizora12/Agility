@@ -1,0 +1,25 @@
+{
+  "name"             : "project_agility",
+  "version"          : "1.0.0",
+  "description"      : "",
+  "main"             : "index.js",
+  "scripts": {
+    "login"          : "npx playwright test tests/loginTest.spec.ts",
+    "smoke"          : "npx playwright test --grep smoke",
+    "regression"     : "npx playwright test",
+    "ui"             : "npx playwright test tests/visualTest.spec.ts",
+    "networktest"    : "npx playwright test tests/networkTest.spec.ts"
+  },
+  "keywords"         : [],
+  "author"           : "",
+  "license"          : "ISC",
+  "devDependencies"  : {
+    "@faker-js/faker"     : "^8.4.1",
+    "@playwright/test"    : "^1.44.0",
+    "@types/node"         : "^20.12.11",
+    "allure-playwright"   : "^2.15.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
